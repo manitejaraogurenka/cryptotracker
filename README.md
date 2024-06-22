@@ -15,7 +15,7 @@ This is a mobile-first responsive web application for tracking cryptocurrencies.
 
 ## Setup Instructions
 
-1. Clone the repository: `git clone https://github.com/your-repo.git`
+1. Clone the repository: `git clone https://github.com/manitejaraogurenka/cryptotracker.git`
 2. Install dependencies for frontend and backend:
    - Frontend: `cd client && npm install`
    - Backend: `cd server && npm install`
