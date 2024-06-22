@@ -1,0 +1,14 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        Orbitron: ["Orbitron", "sans-serif"],
+        Oxanium: ["Oxanium", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+};
