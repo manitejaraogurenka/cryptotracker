@@ -24,7 +24,6 @@ export const fetchTrendingCoins = async (currency) => {
         params: { convert: currency },
       }
     );
-    console.log("haii");
 
     return response.data;
   } catch (error) {
