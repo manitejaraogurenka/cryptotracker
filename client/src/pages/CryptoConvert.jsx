@@ -56,7 +56,7 @@ const CryptoConvert = () => {
     }
 
     axios
-      .get("/api/convert", {
+      .get("https://cryptotrackerapi.vercel.app/api/convert", {
         params: {
           fromCoin: fromCoin,
           toCoin: toCoin,

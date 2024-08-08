@@ -2,9 +2,12 @@ import axios from "axios";
 
 export async function fetchCryptocurrency(currency, page) {
   try {
-    const response = await axios.get(`/api`, {
-      params: { convert: currency, page: page },
-    });
+    const response = await axios.get(
+      `https://cryptotrackerapi.vercel.app/api`,
+      {
+        params: { convert: currency, page: page },
+      }
+    );
     console.log("haii");
     console.log(response);
 
@@ -17,9 +20,12 @@ export async function fetchCryptocurrency(currency, page) {
 
 export const fetchTrendingCoins = async (currency) => {
   try {
-    const response = await axios.get("/api/trending", {
-      params: { convert: currency },
-    });
+    const response = await axios.get(
+      "https://cryptotrackerapi.vercel.app/api/trending",
+      {
+        params: { convert: currency },
+      }
+    );
     console.log("haii");
 
     console.log(response);
@@ -32,7 +38,9 @@ export const fetchTrendingCoins = async (currency) => {
 
 export async function fetchCryptoCoinsList() {
   try {
-    const response = await axios.get("/api/coins");
+    const response = await axios.get(
+      "https://cryptotrackerapi.vercel.app/api/coins"
+    );
     console.log(response);
     return response.data;
   } catch (error) {
