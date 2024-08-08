@@ -8,8 +8,6 @@ export async function fetchCryptocurrency(currency, page) {
         params: { convert: currency, page: page },
       }
     );
-    console.log("haii");
-    console.log(response);
 
     return response.data;
   } catch (error) {
@@ -28,7 +26,6 @@ export const fetchTrendingCoins = async (currency) => {
     );
     console.log("haii");
 
-    console.log(response);
     return response.data;
   } catch (error) {
     console.error("Error fetching trending coins data:", error);
@@ -41,7 +38,7 @@ export async function fetchCryptoCoinsList() {
     const response = await axios.get(
       "https://cryptotrackerapi.vercel.app/api/coins"
     );
-    console.log(response);
+
     return response.data;
   } catch (error) {
     console.error("Error fetching cryptocurrency data:", error);
